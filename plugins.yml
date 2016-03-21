@@ -28,6 +28,7 @@ plugins:
   tagbar: git://github.com/majutsushi/tagbar.git
   unimpaired: git://github.com/tpope/vim-unimpaired.git
   unite: git@github.com:Shougo/unite.vim.git
+  vinegar: git://github.com/tpope/vim-vinegar.git
   webapi: git@github.com:mattn/webapi-vim.git
   zoomwin: git://github.com/itspriddle/ZoomWin.git
 
@@ -45,6 +46,7 @@ plugins:
   ir_black: git://github.com/lukaszb/vim-irblack.git
   janus: git://github.com/TechnoGate/janus-colors.git
   molokai: https://github.com/vim-scripts/molokai.git
+  onedark: git@github.com:geoffharcourt/one-dark.vim.git
   proton: git@github.com:vim-scripts/proton.git
   pyte: https://github.com/vim-scripts/pyte.git
   sampler-pack: https://github.com/vim-scripts/Colour-Sampler-Pack.git
