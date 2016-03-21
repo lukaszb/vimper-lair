@@ -36,6 +36,9 @@ plugins:
   rainbow-parens: git://github.com/vim-scripts/Rainbow-Parentheses-Improved-and2.git
 
   # colors
+  atom: git@github.com:gregsexton/Atom.git
+  atom-dark: git@github.com:gosukiwi/vim-atom-dark.git
+  atom-one-dark: git@github.com:mhumeSF/one-dark.vim.git
   base16: git@github.com:chriskempson/base16-vim.git
   getafe: https://github.com/larssmit/vim-getafe.git
   github: https://github.com/telamon/vim-color-github.git

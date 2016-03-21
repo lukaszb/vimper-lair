@@ -226,7 +226,7 @@ let g:pymode_rope_autoimport_generate = 0
 let g:pymode_rope_autoimport_modules = ["os","shutil","datetime"]
 let g:pymode_rope_vim_completion = 1
 let g:pymode_rope_complete_on_dot = 0
-let g:pymode_virtualenv = 1
+let g:pymode_virtualenv = 0
 
 let g:pymode_lint = 0
 
@@ -326,7 +326,7 @@ let g:ctrlp_prompt_mappings = {
 " Maximum height of filename window.
 let g:ctrlp_max_height = 50
 
-let g:ctrlp_custom_ignore = '\v(build|dist|__pycache__|node_modules|bower_components|virtualenv)[\/]'
+let g:ctrlp_custom_ignore = '\v(build|dist|__pycache__|node_modules|bower_components|virtualenv|venv|.env)[\/]'
 
 " ==============================================================================
 " Tagbar [ctags]
@@ -395,3 +395,5 @@ if filereadable(expand("~/.vimrc.after"))
   source ~/.vimrc.after
 endif
 
+
+set rtp+=/usr/local/opt/fzf
