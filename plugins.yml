@@ -64,6 +64,7 @@ plugins:
   less: git@github.com:groenewege/vim-less.git
   #riv: git://github.com/Rykka/riv.vim.git # restructuredText
   vim-json: git@github.com:elzr/vim-json.git
+  vue: https://github.com/posva/vim-vue
   salt: git@github.com:saltstack/salt-vim.git
   scala: git@github.com:derekwyatt/vim-scala.git
   toml: git@github.com:cespare/vim-toml.git
