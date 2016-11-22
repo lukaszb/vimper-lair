@@ -17,6 +17,37 @@ nmap <silent> <leader>er :so $MYVIMRC<CR>
 autocmd! bufwritepost $MYVIMRC source %
 
 " ==============================================================================
+" vundle
+" ==============================================================================
+" set the runtime path to include Vundle and initialize
+"set rtp+=~/.vim/bundle/Vundle.vim
+"call vundle#begin()
+
+"" alternatively, pass a path where Vundle should install plugins
+""call vundle#begin('~/some/path/here')
+
+"" let Vundle manage Vundle, required
+"Plugin 'scrooloose/nerdtree'
+"Plugin 'jistr/vim-nerdtree-tabs'
+"Plugin 'tpope/vim-fugitive'
+"Plugin 'Lokaltog/vim-powerline'
+"Plugin 'lukaszb/vim-irblack'
+"Plugin 'rking/ag.vim'
+"Plugin 'kien/ctrlp.vim'
+"Plugin 'scrooloose/nerdcommenter'
+"Plugin 'ervandew/supertab'
+
+"Plugin 'gmarik/Vundle.vim'
+"Plugin 'vim-scripts/indentpython.vim'
+"Bundle 'Valloric/YouCompleteMe'
+
+"" Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
+
+
+"" All of your Plugins must be added before the following line
+"call vundle#end()            " required
+
+" ==============================================================================
 " Basics
 " ==============================================================================
 
@@ -29,6 +60,8 @@ set visualbell
 nnoremap ' `
 nnoremap ` '
 let mapleader=','
+" disable Ex mode:
+nnoremap Q <nop>
 
 set foldlevelstart=10 " open file with all 10-depth folds opened
 
@@ -212,13 +245,13 @@ endif
 " Python-Mode
 " ==============================================================================
 
-"let g:pymode = 1
+let g:pymode = 0
 let g:pymode_options = 0
 let g:pymode_syntax = 0
 let g:pymode_rope_guess_project = 1
 let g:pymode_utils_whitespaces = 0
 
-let g:pymode_rope = 1
+let g:pymode_rope = 0
 let g:pymode_folding = 0
 let g:pymode_rope_auto_project = 1
 let g:pymode_rope_enable_autoimport = 0
