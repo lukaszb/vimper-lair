@@ -19,6 +19,7 @@ plugins:
   nerdtree-tabs: git@github.com:jistr/vim-nerdtree-tabs.git
   nerdtree: git://github.com/lukaszb/nerdtree.git
   nrrwrgn: git://github.com/chrisbra/NrrwRgn.git
+  python-mode: git://github.com/klen/python-mode.git
   rename: git@github.com:vim-scripts/Rename2.git
   repeat: git://github.com/tpope/vim-repeat.git
   singlecompile: git://github.com/xuhdev/SingleCompile.git
@@ -80,6 +81,6 @@ plugins:
   javascript: git@github.com:pangloss/vim-javascript.git
   javascript-syntax: git@github.com:jelera/vim-javascript-syntax.git
   jshint2: git@github.com:Shutnik/jshint2.vim.git
-  syntastic: git@github.com:scrooloose/syntastic.git
+  syntastic: git@github.com:scrooloose/syntastic.git@3.7.0
 
 # vim: tabstop=2 shiftwidth=2 softtabstop=2

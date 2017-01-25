@@ -197,6 +197,8 @@ let NERDTreeWinSize=50
 " Filetypes
 " ==============================================================================
 autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType python map <buffer> <F3> :call Flake8()<CR>
+autocmd BufWritePost *.py call Flake8()
 autocmd FileType html set filetype=htmldjango
 autocmd BufEnter *.html set ft=htmldjango
 autocmd BufRead,BufNewFile *.applescript set filetype=applescript
