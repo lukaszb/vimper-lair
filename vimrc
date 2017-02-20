@@ -198,6 +198,9 @@ let NERDTreeWinSize=50
 " ==============================================================================
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType python map <buffer> <F3> :call Flake8()<CR>
+autocmd FileType python setlocal ts=4 sts=4 sw=4
+autocmd FileType javascript setlocal ts=2 sts=2 sw=2
+autocmd FileType typescript setlocal ts=2 sts=2 sw=2
 autocmd BufWritePost *.py call Flake8()
 autocmd FileType html set filetype=htmldjango
 autocmd BufEnter *.html set ft=htmldjango
