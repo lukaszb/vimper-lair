@@ -13,7 +13,7 @@ plugins:
   go: git@github.com:fatih/vim-go.git
   gundo: git://github.com/sjl/gundo.vim.git
   indent-object: git://github.com/michaeljsmith/vim-indent-object.git
-  matchit: https://github.com/edsono/vim-matchit.git
+  matchit: https://github.com/vim-scripts/matchit.zip.git
   multiple-cursors: git://github.com/terryma/vim-multiple-cursors.git
   nerdcommenter: git://github.com/scrooloose/nerdcommenter.git
   nerdtree-tabs: git@github.com:jistr/vim-nerdtree-tabs.git
