@@ -14,7 +14,7 @@ set guitablabel=%!expand(\"\%:t\")
 let NERDTreeWinSize = 50
 
 if exists('g:GUI_NERDTREE_DEFAULT_PATH') && isdirectory(expand(g:GUI_NERDTREE_DEFAULT_PATH))
-    autocmd VimEnter * :execute 'NERDTreeToggle ' . g:GUI_NERDTREE_DEFAULT_PATH
+    autocmd VimEnter * :execute 'NERDTree ' . g:GUI_NERDTREE_DEFAULT_PATH
 endif
 
 " Quickly edit/reload the vimrc file

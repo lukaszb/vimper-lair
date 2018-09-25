@@ -6,8 +6,8 @@ endif
 " ==============================================================================
 " Pathogen
 " ==============================================================================
-call pathogen#infect()
-call pathogen#helptags()
+"call pathogen#infect()
+"call pathogen#helptags()
 
 " Quickly edit/reload the vimrc file
 nmap <silent> <leader>ee :e $MYVIMRC<CR>
@@ -19,33 +19,30 @@ autocmd! bufwritepost $MYVIMRC source %
 " ==============================================================================
 " vundle
 " ==============================================================================
+filetyp off
 " set the runtime path to include Vundle and initialize
-"set rtp+=~/.vim/bundle/Vundle.vim
-"call vundle#begin()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 "" alternatively, pass a path where Vundle should install plugins
 ""call vundle#begin('~/some/path/here')
 
 "" let Vundle manage Vundle, required
-"Plugin 'scrooloose/nerdtree'
-"Plugin 'jistr/vim-nerdtree-tabs'
-"Plugin 'tpope/vim-fugitive'
-"Plugin 'Lokaltog/vim-powerline'
-"Plugin 'lukaszb/vim-irblack'
-"Plugin 'rking/ag.vim'
-"Plugin 'kien/ctrlp.vim'
-"Plugin 'scrooloose/nerdcommenter'
-"Plugin 'ervandew/supertab'
+Plugin 'gmarik/Vundle.vim'
 
-"Plugin 'gmarik/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'lukaszb/vim-irblack'
+Plugin 'rking/ag.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'ervandew/supertab'
+
 "Plugin 'vim-scripts/indentpython.vim'
-"Bundle 'Valloric/YouCompleteMe'
-
-"" Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
 
 
 "" All of your Plugins must be added before the following line
-"call vundle#end()            " required
+call vundle#end()            " required
 
 " ==============================================================================
 " Basics
@@ -236,7 +233,9 @@ autocmd FileType go nmap <leader>rr <Plug>(go-run)
 " Load platform specific settings
 " ==============================================================================
 if has('mac')
-    source ~/.vim/conf/osx
+    if filereadable(expand("~/.vim/conf/osx"))
+        source ~/.vim/conf/osx
+    endif
 endif
 if !has('mac') && has('unix')
     source ~/.vim/conf/linux
@@ -256,7 +255,7 @@ let g:pymode_syntax = 0
 let g:pymode_rope_guess_project = 1
 let g:pymode_utils_whitespaces = 0
 
-let g:pymode_rope = 0
+let g:pymode_rope = 1
 let g:pymode_folding = 0
 let g:pymode_rope_auto_project = 1
 let g:pymode_rope_enable_autoimport = 0
@@ -267,6 +266,7 @@ let g:pymode_rope_complete_on_dot = 0
 let g:pymode_virtualenv = 0
 
 let g:pymode_lint = 0
+let g:pymode_lint_checkers = []
 
 let g:pymode_rope_goto_definition_bind = '<C-g>'
 let g:pymode_rope_goto_definition_cmd = 'tabnew'
