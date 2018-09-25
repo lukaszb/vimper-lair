@@ -37,6 +37,7 @@ Plugin 'rking/ag.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'ervandew/supertab'
+Plugin 'posva/vim-vue'
 
 "Plugin 'vim-scripts/indentpython.vim'
 
@@ -160,7 +161,7 @@ if has("autocmd")
 endif
 
 " CDC = Change to Directory of Current file
-command CDC cd %:p:h
+" command CDC cd %:p:h
 
 " Error marker at ~100 character
 autocmd BufWinEnter *.py,*.txt,*.rst,*.c,*.cpp let w:m2=matchadd('ErrorMsg', '\%>100v.\+', -1)
